@@ -16,6 +16,8 @@ services:
     restart: always
     ports:
       - 8181:8181
+    depends_on:
+     - chat-db
  
 volumes:
   chat-postgres:
