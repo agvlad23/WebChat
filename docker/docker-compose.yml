@@ -17,7 +17,7 @@ services:
     image: webchat
     restart: always
     environment:
-      SPRING_DATASOURCE_URL: "jdbc:postgresql://chat-db:5432/tele?currentSchema=chat"
+      SPRING_DATASOURCE_URL: "jdbc:postgresql://chat-db:5432/tele?currentSchema=public"
     ports:
       - 8181:8181
     depends_on:
