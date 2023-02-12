@@ -11,6 +11,8 @@ services:
     restart: always
     ports:
       - 5432:5432
+    networks:
+    - vla_network
   chat-jav:
     image: webchat
     restart: always
@@ -20,6 +22,10 @@ services:
       - 8181:8181
     depends_on:
      - chat-db
- 
+    networks:
+    - vla_network
+networks:
+  vla_network:
+    driver: bridge
 volumes:
   chat-postgres:
