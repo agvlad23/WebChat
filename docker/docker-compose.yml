@@ -5,6 +5,7 @@ services:
     environment:
       PGDATA: "/var/lib/postgresql/data/"
       POSTGRES_DB: tele
+      POSTGRES_PASSWORD: password
     volumes:
       - chat-postgres:/var/lib/postgresql/data:rw
     restart: always
