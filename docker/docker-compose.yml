@@ -10,6 +10,11 @@ services:
     restart: always
     ports:
       - 5432:5432
-
+  chat-jav:
+    image: webchat
+    restart: always
+    ports:
+      - 8181:8181
+ 
 volumes:
   chat-postgres:
