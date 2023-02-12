@@ -2,7 +2,7 @@ server:
   port: 8181
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/tele?currentSchema=chat
+    url: jdbc:postgresql://chat-db:5432/tele?currentSchema=chat
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: password
